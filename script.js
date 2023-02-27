@@ -8,7 +8,7 @@ const btns = document.querySelectorAll('button'),
 // console.log(btns[0].classList.toggle('blue')); // добавляет класс blue, если его не было
 
 // if (btns[1].classList.contaimn('red')) {
-//     console.log('red'); // если у второй кнопки есть класс red ты выведется в консоль
+//     console.log('red'); // если у второй кнопки есть класс red выведется в консоль
 // }
 
 btns[0].addEventListener('click', () => {
@@ -47,9 +47,9 @@ wrapper.addEventListener('click', (e) => {
 //     btn.addEventListener('click', () => {
 // console.log('Hello');
 //     });
-// }); // динамически созданный элемент не будт принимать действие
+// }); // динамически созданный элемент не буедт принимать действие
 
 
-const btn = document.createElement('button');
-btn.classList.add('red');
-wrapper.append(btn);
+const btn = document.createElement('button'); // создание нового элемента с селектором button
+btn.classList.add('red'); // присвоение класса новому элементу
+wrapper.append(btn); // размещение нового элемента в конец обёртки
